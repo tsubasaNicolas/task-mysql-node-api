@@ -1,0 +1,33 @@
+@api=http://127.0.0.1:3000/tasks
+
+
+GET {{api}} HTTP/1.1
+
+###
+GET {{api}}/10 HTTP/1.1
+
+###
+GET {{api}}/count HTTP/1.1
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "third task",
+    "description": "some description task third"
+}
+
+###
+DELETE {{api}}/8
+
+###
+
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+     "title": "tarea dos ",
+    "description": "description tarea dos"
+}
+
