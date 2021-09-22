@@ -1,0 +1,36 @@
+//@api=http://127.0.0.1:3000/tasks
+//@api=http://159.89.91.39:3000/tasks
+@api=http://127.0.0.1:4000/colaboradores
+
+
+GET {{api}} HTTP/1.1
+
+###
+ 
+GET {{api}}/5 HTTP/1.1
+
+###
+GET {{api}}/count HTTP/1.1
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombre": "Carlos luengo",
+    "telefono": 5954620265
+}
+
+###
+DELETE {{api}}/4
+
+###
+
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "nombre": "Juan Esteban",
+    "telefono": 56977041571
+}
+

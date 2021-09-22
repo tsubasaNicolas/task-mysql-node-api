@@ -1,0 +1,41 @@
+//@api=http://127.0.0.1:3000/tasks
+//@api=http://159.89.91.39:3000/tasks
+@api=http://127.0.0.1:4000/locales
+
+
+GET {{api}} HTTP/1.1
+
+###
+ 
+GET {{api}}/1 HTTP/1.1
+
+###
+GET {{api}}/count HTTP/1.1
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "local": "Botillería",
+    "encargado": "Baltazar Contreras",
+    "telefono": 56945078522,
+    "ubicacion": "Esquina Sur",
+    "estado":"abierto"
+}
+
+###
+DELETE {{api}}/1
+
+###
+
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "local": "Starbucks 2",
+    "encargado": "Juan Cuidador 2",
+    "telefono": 56977041571,
+    "ubicacion": "Sector norte, segundo piso."
+}
+

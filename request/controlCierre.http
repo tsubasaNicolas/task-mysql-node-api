@@ -1,0 +1,45 @@
+//@api=http://127.0.0.1:3000/tasks
+//@api=http://159.89.91.39:3000/tasks
+@api=http://127.0.0.1:4000/cierre
+
+
+GET {{api}} HTTP/1.1
+
+###
+ 
+GET {{api}}/17 HTTP/1.1
+
+###
+
+GET {{api}}/locales HTTP/1.1
+
+###
+GET {{api}}/count HTTP/1.1
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_local":48,
+    "cierre":1,
+     "estado":"Abierto",
+      "fecha_hora":null
+    
+   
+}
+
+###
+DELETE {{api}}/17
+
+###
+
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "nombre_local": "Farmacia 1",
+    "cierre":true,
+    "fecha_hora": null
+}
+

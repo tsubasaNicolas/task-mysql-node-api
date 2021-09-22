@@ -1,3 +1,5 @@
+//@api=http://127.0.0.1:3000/tasks
+//@api=http://159.89.91.39:3000/tasks
 @api=http://127.0.0.1:3000/tasks
 
 
@@ -9,7 +11,7 @@ GET {{api}} HTTP/1.1
 
 
  
-GET {{api}}/10 HTTP/1.1
+GET {{api}}/15 HTTP/1.1
 
 ###
 GET {{api}}/count HTTP/1.1
@@ -19,8 +21,8 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "title": "third task",
-    "description": "some description task third"
+    "title": "tarea para todos",
+    "description": "revisión caseta"
 }
 
 ###
@@ -28,11 +30,12 @@ DELETE {{api}}/8
 
 ###
 
-PUT {{api}}/2
+PUT {{api}}/10
 Content-Type: application/json
 
 {
-     "title": "tarea dos ",
-    "description": "description tarea dos"
+     "title": "tarea diez hoy ",
+    "description": "description 10 10",
+    "fecha": "2021-08-15T01:10:08.000Z"
 }
 
